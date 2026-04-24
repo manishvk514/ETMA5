@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything Media — an AI film studio, built by filmmakers</title>
+  <meta name="description" content="An AI film studio, built by filmmakers. Tools change. Taste doesn't.">
+  <meta property="og:title" content="Everything Media">
+  <meta property="og:description" content="An AI film studio, built by filmmakers.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2242%22 fill=%22none%22 stroke=%22%23B8412F%22 stroke-width=%226%22/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-shell">
+      <div class="pre-labels">
+        <span>exposure</span>
+        <span>grain</span>
+        <span>motion</span>
+        <span>frame</span>
+        <span>signal</span>
+      </div>
+      <div class="pre-aperture"></div>
+      <div class="pre-wordmark">everything media</div>
+    </div>
+  </div>
+
+  <div class="grain"></div>
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor-label">view</span>
+    <span class="cursor-frame"></span>
+  </div>
+  <div class="scroll-progress"><span id="scroll-progress-bar"></span></div>
+
+  <nav class="site-nav" id="site-nav">
+    <a href="#top" class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>everything media</span>
+    </a>
+    <div class="nav-center" id="nav-timecode">00:00:00</div>
+    <div class="nav-links">
+      <a href="#work-index">work</a>
+      <a href="#method">method</a>
+      <a href="#contact">start a project</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <div class="hero-still active" data-meta="01 · 35mm · f/1.8" style="background-image:url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=2200&q=90');"></div>
+        <div class="hero-still" data-meta="02 · 50mm · f/2.0" style="background-image:url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=2200&q=90');"></div>
+        <div class="hero-still" data-meta="03 · 85mm · f/2.8" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2200&q=90');"></div>
+      </div>
+      <div class="hero-glass"></div>
+      <div class="hero-guides">
+        <span class="guide tl"></span><span class="guide tr"></span><span class="guide bl"></span><span class="guide br"></span>
+        <span class="safe-line top"></span><span class="safe-line bottom"></span>
+      </div>
+      <div class="hero-content">
+        <div class="eyebrow">calibrated for taste</div>
+        <h1>
+          <span>EVERYTHING</span>
+          <span>MEDIA</span>
+        </h1>
+        <p class="hero-sub">An AI film studio, built by filmmakers.</p>
+        <div class="hero-thesis">tools change. taste doesn't.</div>
+      </div>
+      <div class="hero-meta">
+        <div>scn. 01 / entry</div>
+        <div id="hero-meta">01 · 35mm · f/1.8</div>
+        <div>scroll to enter</div>
+      </div>
+    </section>
+
+    <section class="positioning-panel" id="positioning">
+      <div class="positioning-inner sticky-stage">
+        <div class="section-tag">scn. 02 / position</div>
+        <div class="positioning-lines">
+          <div class="mask-line"><h2>Tools change.</h2></div>
+          <div class="mask-line accent"><h2>Taste doesn't.</h2></div>
+        </div>
+        <p class="positioning-copy">A team of directors, artists, and engineers.<br>People who care about the frame as much as the deadline.</p>
+      </div>
+    </section>
+
+    <section class="work-index" id="work-index">
+      <div class="section-head split">
+        <div class="section-tag">scn. 03 / work</div>
+        <h2>The <em>work.</em></h2>
+      </div>
+      <div class="archive-grid">
+        <button class="archive-card active" data-project="jiostar" data-cursor="enter">
+          <span class="archive-kicker">01:23:06</span>
+          <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1600&q=90" alt="JioStar">
+          <span class="archive-title">JioStar</span>
+          <span class="archive-line">Nine channels. One family.</span>
+        </button>
+        <button class="archive-card" data-project="vida" data-cursor="enter">
+          <span class="archive-kicker">00:47:22</span>
+          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=90" alt="Hero Vida">
+          <span class="archive-title">Hero Vida</span>
+          <span class="archive-line">Electric. Where a crane can't go.</span>
+        </button>
+        <button class="archive-card" data-project="krishna" data-cursor="enter">
+          <span class="archive-kicker">00:12:08</span>
+          <img src="https://images.unsplash.com/photo-1611348586840-ea9872d33411?auto=format&fit=crop&w=1600&q=90" alt="Krishna">
+          <span class="archive-title">Krishna</span>
+          <span class="archive-line">The first frames of something new.</span>
+        </button>
+        <button class="archive-card" data-project="surili" data-cursor="enter">
+          <span class="archive-kicker">animation</span>
+          <img src="https://images.unsplash.com/photo-1574267432644-f410f8ec2d4b?auto=format&fit=crop&w=1600&q=90" alt="Surili Didi">
+          <span class="archive-title">Surili Didi</span>
+          <span class="archive-line">A character, engineered.</span>
+        </button>
+        <button class="archive-card" data-project="untitled" data-cursor="enter">
+          <span class="archive-kicker">02:04:17</span>
+          <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1600&q=90" alt="Untitled">
+          <span class="archive-title">Untitled</span>
+          <span class="archive-line">The kind we make when nobody's asking.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="featured-work" id="work">
+      <div class="featured-shell sticky-stage">
+        <div class="featured-side">
+          <div class="section-tag">selected frame</div>
+          <div class="featured-meta" id="featured-code">project 01 / 2026</div>
+          <h3 id="featured-title">JioStar</h3>
+          <p id="featured-line">Nine channels. One family.</p>
+          <div class="featured-footer">
+            <span id="featured-year">2026</span>
+            <span>view case →</span>
+          </div>
+        </div>
+        <div class="featured-stage" id="featured-stage" data-cursor="frame">
+          <div class="stage-light"></div>
+          <img id="featured-image" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=2200&q=90" alt="JioStar">
+          <div class="stage-matte"></div>
+          <div class="stage-annotation">framed selection</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reel-corridor">
+      <div class="section-head narrow">
+        <div class="section-tag">movement / reel corridor</div>
+      </div>
+      <div class="corridor-wrap">
+        <div class="corridor-track" id="corridor-track">
+          <article class="corridor-panel wide">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1800&q=90" alt="JioStar still">
+            <div><strong>JioStar</strong><span>Nine channels. One family.</span></div>
+          </article>
+          <article class="corridor-panel">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=90" alt="Hero Vida still">
+            <div><strong>Hero Vida</strong><span>Electric. Where a crane can't go.</span></div>
+          </article>
+          <article class="corridor-panel">
+            <img src="https://images.unsplash.com/photo-1611348586840-ea9872d33411?auto=format&fit=crop&w=1600&q=90" alt="Krishna still">
+            <div><strong>Krishna</strong><span>The first frames of something new.</span></div>
+          </article>
+          <article class="corridor-panel">
+            <img src="https://images.unsplash.com/photo-1574267432644-f410f8ec2d4b?auto=format&fit=crop&w=1600&q=90" alt="Surili Didi still">
+            <div><strong>Surili Didi</strong><span>A character, engineered.</span></div>
+          </article>
+          <article class="corridor-panel wide">
+            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1800&q=90" alt="Untitled still">
+            <div><strong>Untitled</strong><span>The kind we make when nobody's asking.</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="section-head split">
+        <div class="section-tag">scn. 04 / method</div>
+        <h2><em>How we work.</em></h2>
+      </div>
+      <div class="method-stack">
+        <article class="method-card">
+          <div class="method-num">01</div>
+          <div class="method-copy">
+            <h3>We start with the feeling.</h3>
+            <p>Before references, before tools. What should this make someone feel. Everything after serves that answer.</p>
+          </div>
+          <div class="method-visual blur"></div>
+        </article>
+        <article class="method-card">
+          <div class="method-num">02</div>
+          <div class="method-copy">
+            <h3>We build the world.</h3>
+            <p>Palette, lens, light, texture. The visual universe the work will live in. Decided on paper, before the first frame gets made.</p>
+          </div>
+          <div class="method-visual palette"></div>
+        </article>
+        <article class="method-card">
+          <div class="method-num">03</div>
+          <div class="method-copy">
+            <h3>We compose every shot.</h3>
+            <p>Every frame is a decision. The same care a cinematographer brings to a set.</p>
+          </div>
+          <div class="method-visual frame"></div>
+        </article>
+        <article class="method-card">
+          <div class="method-num">04</div>
+          <div class="method-copy">
+            <h3>We direct the motion.</h3>
+            <p>Pace, pause, the weight of a beat. What moves, and what doesn't. Motion is how a picture becomes a feeling.</p>
+          </div>
+          <div class="method-visual motion"></div>
+        </article>
+        <article class="method-card">
+          <div class="method-num">05</div>
+          <div class="method-copy">
+            <h3>We finish when it's right.</h3>
+            <p>Color, sound, the final cut. Done is when the work stops asking for changes — not when the calendar asks for delivery.</p>
+          </div>
+          <div class="method-visual finish"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="conviction-section" id="conviction">
+      <div class="conviction-inner">
+        <div class="section-tag">scn. 05 / conviction</div>
+        <h2>
+          <span>The best work feels like someone</span>
+          <span><em>couldn't stop thinking about it.</em></span>
+          <span>Work you'd <em>watch twice.</em></span>
+        </h2>
+        <p>— that's the bar we're working to.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <div class="section-tag">scn. 06 / contact</div>
+          <h2><em>Let's talk about</em><br>what you're making.</h2>
+          <p>we reply to the briefs we can do justice to.</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label><span>your name</span><input type="text" name="name" required></label>
+          <label><span>company or project</span><input type="text" name="company"></label>
+          <label><span>email</span><input type="email" name="email" required></label>
+          <label><span>type of work</span>
+            <select name="type" required>
+              <option value="" selected disabled></option>
+              <option value="brand-film">brand film</option>
+              <option value="ad">ad</option>
+              <option value="music-video">music video</option>
+              <option value="motion">motion</option>
+              <option value="trailer">trailer</option>
+              <option value="other">something else</option>
+            </select>
+          </label>
+          <label class="full"><span>tell us about it — what you're making, what you've tried, what it should feel like</span><textarea name="message" rows="5" required></textarea></label>
+          <div class="form-bottom">
+            <button type="submit" class="submit-btn" data-cursor="send">send <span>→</span></button>
+            <div id="form-status">or write directly</div>
+          </div>
+          <a href="mailto:hello@everythingmedia.co.in" class="direct-email">hello@everythingmedia.co.in</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-mark"><span class="brand-dot"></span><span>everything media</span></div>
+    <div>© 2026</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
